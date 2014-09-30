@@ -1,0 +1,84 @@
+/*
+YUI 3.17.2 (build 9c3c78e)
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+/*Prevent text-size-adjustements*/
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  margin-left: 18px;
+  margin-right: 18px;
+  background-color: #E0E0E0;
+  text-align: center;
+
+}
+h1 {
+  font-size: 36px;
+  line-height: 48px;
+  padding-bottom: 24px;
+}
+
+h2 {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+p {
+  color: #303030;
+  text-indent: 1em;
+  padding-top: 6px;
+  padding-bottom: 18px;
+}
+
+a {
+  color: #707070;
+  text-decoration: none;
+}
+
+.introduction {
+  color: #FFF;
+  background-color: darkgray;
+}
+
+.about {
+  color: lightgray;
+  background-color: #FFF;
+}
+
+.interests {
+  color: #FFF;
+  background-color: lightgray;
+}
+
+.contact {
+  color: lightgray;
+  background-color: darkgray;
+
+}
+
+.license {
+
+}
+
+@media screen and (min-width: 12.5em) {
+
+}
+
+@media screen and (min-width: 50em) {
+
+}
+
+@media screen and (min-width: 75em) {
+
+}
