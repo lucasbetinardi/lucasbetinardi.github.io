@@ -169,6 +169,7 @@ a:hover {
   img {
     width: 8em;
   }
+}
 
 @media screen and (min-width: 50em) {
   p {
@@ -182,8 +183,6 @@ a:hover {
 }
 
 @media screen and (min-width: 75em) {
-  
-
   p {
     max-width: 40em;
     margin: 0 auto;
@@ -191,6 +190,5 @@ a:hover {
 
   img {
     width: 10em;
-    float: center;
   }
 }
