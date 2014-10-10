@@ -9,9 +9,8 @@ html {
 
 /* HTML5 elements to be displayed as blocks */
 
-header, footer, small {
-  display: block;
-  font-size: inherit;
+header, footer {
+  display: block;;
 }
 
 /*
@@ -20,7 +19,7 @@ Golden Section module used;
 available at http://modularscale.com/scale/?px1=18&px2=&ra1=1.618&ra2=0
 */
 
-html {
+html, body {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 1.125em; /* 18px */
   line-height: 1.618em; /* 29.124 px */
@@ -28,21 +27,17 @@ html {
   width: 100%;
 }
 
-body {
-height: 100%;
-}
-
-/* Centralization of the title based on http://www.petertoth.me/ */
+/* Centralization of the title based on http://www.petertoth.me */
 
 header {
   position: absolute;
   height: 175px;
   vertical-align: middle;
   margin: auto;
-  top: 0em;
-  left: 0em;
-  bottom: 0em;
-  right: 0em;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   z-index: 10;
 }
 
@@ -59,28 +54,30 @@ h1, h2 {
 }
 
 h1 {
-  color: #303030;
   font-size: 1.618em; /* 29.124 px */
-  line-height: 2.618em; /* 47.123 px */
+  line-height: 1em; /* 47.123 px */
   text-transform: uppercase;
+  padding-bottom: 1em;
 }
 
 h2 {
-  font-size: 24px;
-  padding-bottom: 6px;
+  font-size: 1em;
+  line-height: 1em;
+  padding-bottom: 1em;
 }
 
 p {
   color: #303030;
-  margin-left: 18px;
-  margin-right: 18px;
-  padding-top: 6px;
-  padding-bottom: 18px;
+  padding-bottom: 1em;
 }
 
 a {
   color: #707070;
-  text-decoration: none;
+  text-decoration: underline;
+}
+
+a:hover {
+  color:#303030;
 }
 
 .introduction {
@@ -92,58 +89,76 @@ a {
   -o-background-size: cover;
   background-size: cover;
   overflow: hidden;
-  color: #FFF;
   z-index: 0;
 }
 
 .introduction h1 {
-  color: #FFF;
   font-size: 2.618em; /* 47.123 px */
-  line-height: 1.618em;
+  line-height: 1.2em;
+  color: #FFF;
+  padding-bottom: .2em;
 }
 
 .introduction h2 {
   font-size: 1em;
-  line-height: 1em;
+  line-height: 1.5em;
+  color: #F8F8F8;
 }
 
 .about {
-  color: lightgray;
   background-color: #FFF;
-  padding-top: 4em;
-  padding-bottom: 4em;
+  padding-top: 3em;
+  padding-bottom: 2em;
+}
+
+.about h1 {
+  padding-bottom: 0;
 }
 
 .interests {
-  color: #303030;
   background-color: lightgray;
-  padding-top: 4em;
-  padding-bottom: 4em;
+  padding-top: 3em;
+  padding-bottom: 2em;
+}
+
+.interests h1 {
+  padding-bottom: 0em;
 }
 
 .interests h2 {
-  padding-top: 3em;
   text-transform: uppercase;
+  padding-top: 2em;
+  color: #404040;
+}
+
+.interests p {
+  color: #505050;
 }
 
 .contact {
-  color: lightgray;
   background-color: darkgray;
-  padding-top: 4em;
-  padding-bottom: 4em;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 .contact h2 {
+  padding-top: .5em;
+  padding-bottom: .5em;
   font-size: 1em;
+  color: #404040;
 }
 
 .license {
-  color: #FFF;
+  color: #F8F8F8;
   background-color: lightgray;
   text-align: center;
   padding-top: 1em;
   padding-bottom: 1em;
-  text-indent: 1em;
+}
+
+.license a {
+  display: inline;
+  color: #F8F8F8;
 }
 
 @media screen and (min-width: 10em) {
@@ -168,6 +183,8 @@ a {
 }
 
 @media screen and (min-width: 75em) {
+  
+
   p {
     max-width: 40em;
     margin: 0 auto;
@@ -175,6 +192,6 @@ a {
 
   img {
     width: 10em;
-    float: center left;
+    float: center;
   }
 }
