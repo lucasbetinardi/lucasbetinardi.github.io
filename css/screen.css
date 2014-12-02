@@ -235,39 +235,60 @@ a:hover {
 
 
 
-/* Contact */
 
-#contact {
-    background-color: darkgray;
-    text-align: center;
-    height: 50vh;
+/* Portfolio */
+#portfolio {
+    min-width: 100%;
+    min-height: 100%;
+    background: url("/img/portfolio.jpg") no-repeat bottom center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 0;
+    height: 25em;
 }
 
-#contact h3 {
-
-    padding: .5em;
-    font-size: 1em;
-    color: #404040;
-    display: inline;
+#portfolio h1 {
+    line-height: 1.5em;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-weight: 300;
+    text-transform: uppercase;
+    position: relative;
+    padding-top: 4.5em;
+    padding-bottom: 4em;
+    margin: 0px auto;
+    z-index: 19;
+    font-size: 2.5em;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    transition: all ease 0.3s;
 }
 
-#contact li {
-display: inline-block;
+#portfolio > a {
+    text-decoration: none;
+
 }
 
-
-
-
+#portfolio h1:hover {
+    color: #DBD886;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
 /* License */
 
 #license {
-    color: #F8F8F8;
-    background-color: darkgray;
+    color: #FFF;
+    background-color: #707070;
     text-align: center;
     font-weight: 300;
     padding: .5em 0em;
     font-size: .85em;
+    z-index: 30;
 }
 
 #license a {
@@ -295,7 +316,6 @@ display: inline-block;
     img {
         width: 10em;
     }
-}
 
     #introduction h1 {
         font-size: 2.2em;
@@ -308,6 +328,7 @@ display: inline-block;
     .social {
         margin: 5px;
     }
+}
 
 @media screen and (min-width: 24.5em) {
     p {
@@ -330,6 +351,7 @@ display: inline-block;
     .social {
         margin: 5px;
     }
+}
 
 @media screen and (min-width: 33.8em) {
     p {
@@ -353,6 +375,7 @@ display: inline-block;
     .social {
         margin: 10px;
     }
+}
 
 @media screen and (min-width: 45em) {
     p {
@@ -364,7 +387,6 @@ display: inline-block;
         width: 10em;
         padding-bottom: 1em;
     }
-}
 
     #introduction h1 {
         font-size: 3.9em;
@@ -377,6 +399,7 @@ display: inline-block;
     .social {
         margin: 10px;
     }
+}
 
 @media screen and (min-width: 60em) {
     p {
@@ -400,7 +423,6 @@ display: inline-block;
     .social {
         margin: 10px;
     }
-
 }
 
 @media screen and (min-width: 75em) {
@@ -525,7 +547,6 @@ display: inline-block;
     }
 }
 
-
 @media screen and (min-width: 125em) {
     p {
         margin: 0 auto;
@@ -585,7 +606,5 @@ display: inline-block;
         padding-top: 2em;
         border-left: 1px solid darkgray;
         border-top: 1px solid darkgray;
-    }
-}
     }
 }
