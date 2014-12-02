@@ -1,16 +1,10 @@
 /* Prevent text-size-adjustements */
 
 html {
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%; 
-}
-
-/* HTML5 elements to be displayed as blocks */
-
-header, footer {
-  display: block;;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%; 
 }
 
 /*
@@ -20,41 +14,40 @@ available at http://modularscale.com/scale/?px1=18&px2=&ra1=1.618&ra2=0
 */
 
 html, body {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 1.125em; /* 18px */
-  line-height: 1.618em; /* 29.124 px */
-  height: 100%;
-  width: 100%;
-}
+    font-family: "Lato", "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 1em; /* ?px */
+    line-height: 1.125em; /* 18px */
+    }
 
-/* Centralization of the title based on http://www.petertoth.me */
+
+
+
+
+/* Text */
 
 header {
-  position: absolute;
-  height: 175px;
-  vertical-align: middle;
-  margin: auto;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 10;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0px auto;
+    z-index: 10;
 }
 
 img {
-  padding: 0;
-  margin: 0;
-  max-width: 100%;
-  display: block;
-  margin: 0 auto;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
 h1, h2 {
-  text-align: center;
+    text-align: center;
+    font-weight: 400;
 }
 
 h1 {
-  font-size: 1.618em; /* 29.124 px */
+    font-size: 1.618em; /* 29.124 px */
   line-height: 1em; /* 47.123 px */
   text-transform: uppercase;
   padding-bottom: 1em;
@@ -66,9 +59,14 @@ h2 {
   padding-bottom: 1em;
 }
 
+h3 {
+    font-weight: 300;
+}
+
 p {
   color: #303030;
   padding-bottom: 1em;
+  font-weight: 300;
 }
 
 a {
@@ -80,7 +78,37 @@ a:hover {
   color:#303030;
 }
 
-.introduction {
+
+
+
+
+
+/* Box */
+
+.cont2ent {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0px auto;
+margin: 0px;
+z-index: 1;
+text-align: center;
+}
+
+.conte2nt ul, li {
+  text-align: center;
+  padding-right: 1em;
+  padding-left: 1em;
+display: inline-block;
+}
+
+
+
+
+
+/* Introduction */
+
+#introduction {
   min-width: 100%;
   min-height: 100%;
   background: url("/img/background.jpg") no-repeat center center;
@@ -90,78 +118,133 @@ a:hover {
   background-size: cover;
   overflow: hidden;
   z-index: 0;
+  height: 100vh;
 }
 
-.introduction h1 {
+#introduction h1 {
   font-size: 2.618em; /* 47.123 px */
   line-height: 1.2em;
   color: #FFF;
   padding-bottom: .2em;
 }
 
-.introduction h2 {
-  font-size: 1em;
+#introduction h2 {
+  font-size: 1.125em;
   line-height: 1.5em;
   color: #F8F8F8;
+  font-weight: 300;
 }
 
-.about {
+
+
+
+
+/* About */
+
+#about {
+  min-width: 100%;
+  min-height: 100%;
   background-color: #FFF;
-  padding-top: 3em;
-  padding-bottom: 2em;
+position: relative;
+height: 75vh;
+margin-left: auto;
+margin-right: auto;
+    margin: 0px auto;
+    z-index: 11;
 }
 
-.about h1 {
+#about h1 {
   padding-bottom: 0;
 }
 
-.interests {
-  background-color: lightgray;
-  padding-top: 3em;
-  padding-bottom: 2em;
+.social {
+    padding-top: 1em;
+    text-align: center;
 }
 
-.interests h1 {
+
+
+
+
+/* Interests */
+
+#interests {
+  min-width: 100%;
+  background-color: lightgray;
+position: relative;
+min-height: 100vh;
+margin-left: auto;
+margin-right: auto;
+    margin: 0px auto;
+    z-index: 11;
+
+}
+
+#interests h1 {
   padding-bottom: 0em;
 }
 
-.interests h2 {
+#interests h2 {
   text-transform: uppercase;
   padding-top: 2em;
   color: #404040;
 }
 
-.interests p {
+#interests p {
   color: #505050;
 }
 
-.contact {
+
+
+
+
+/* Contact */
+
+#contact {
   background-color: darkgray;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  text-align: center;
+  height: 50vh;
 }
 
-.contact h2 {
-  padding-top: .5em;
-  padding-bottom: .5em;
+#contact h3 {
+
+  padding: .5em;
   font-size: 1em;
   color: #404040;
+ display: inline;
 }
 
-.license {
+#contact li {
+display: inline-block;
+}
+
+
+
+
+
+/* License */
+
+#license {
   color: #F8F8F8;
   background-color: lightgray;
   text-align: center;
   padding: 1em;
+  font-weight: 300;
 }
 
-.license a {
+#license a {
   display: inline;
   color: #F8F8F8;
 }
 
+
+
+
+
+/* Media Query */
+
 @media screen and (min-width: 10em) {
-  p {
+  p2 {
     padding-left: 2em;
     padding-right: 2em;
   }
@@ -172,7 +255,7 @@ a:hover {
 }
 
 @media screen and (min-width: 50em) {
-  p {
+  p2 {
     padding-left: 9em;
     padding-right: 9em;
   }
@@ -180,10 +263,11 @@ a:hover {
   img {
     width: 10em;
   }
+
 }
 
 @media screen and (min-width: 75em) {
-  p {
+  p2 {
     max-width: 40em;
     margin: 0 auto;
   }
