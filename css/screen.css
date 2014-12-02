@@ -1,4 +1,11 @@
-/* Prevent text-size-adjustements */
+/* 
+2014 Lucas Betinardi
+Released under Don't Be a Dick Public License
+Special thanks to Felipe Manoeli
+*/
+
+
+/* Design */
 
 html {
     -webkit-text-size-adjust: 100%;
@@ -7,23 +14,11 @@ html {
     text-size-adjust: 100%; 
 }
 
-/*
-Design
-Golden Section module used;
-available at http://modularscale.com/scale/?px1=18&px2=&ra1=1.618&ra2=0
-*/
-
 html, body {
     font-family: "Lato", "Trebuchet MS", Helvetica, sans-serif;
-    font-size: 1em; /* ?px */
-    line-height: 1.125em; /* 18px */
+    font-size: 1em;
+    line-height: 1.125em;
 }
-
-
-
-
-
-/* Text */
 
 header {
     position: relative;
@@ -49,8 +44,8 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 1.618em; /* 29.124 px */
-    line-height: 1em; /* 47.123 px */
+    font-size: 1.618em; 
+    line-height: 1em;
     text-transform: uppercase;
     padding-bottom: 2em;
 }
@@ -112,11 +107,26 @@ a:hover {
     color: #DBD886;
     font-weight: 300;
     text-transform: uppercase;
+}
+
+.scroll {
+    font-size: .75em;
+    line-height: 1.5em;
+    color: #808080;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    bottom: 3%;
+    width: 100%;
 
 }
 
-
-
+.scroll h3 {
+    font-size: 3em;
+    font-weight: 100;
+    margin-top: .5em;
+}
 
 
 /* About */
@@ -237,6 +247,7 @@ a:hover {
 
 
 /* Portfolio */
+
 #portfolio {
     min-width: 100%;
     min-height: 100%;
@@ -279,15 +290,19 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+
+
+
+
 /* License */
 
 #license {
-    color: #FFF;
+    color: #F8F8F8;
     background-color: #707070;
     text-align: center;
     font-weight: 300;
     padding: .5em 0em;
-    font-size: .85em;
+    font-size: .8em;
     z-index: 30;
 }
 
@@ -317,6 +332,10 @@ a:hover {
         width: 10em;
     }
 
+    header {
+        top: 45%;
+    }
+
     #introduction h1 {
         font-size: 2.2em;
     }
@@ -328,6 +347,7 @@ a:hover {
     .social {
         margin: 5px;
     }
+
 }
 
 @media screen and (min-width: 24.5em) {
@@ -338,6 +358,10 @@ a:hover {
 
     img {
         width: 10em;
+    }
+
+    header {
+        top: 45%;
     }
 
     #introduction h1 {
@@ -362,6 +386,10 @@ a:hover {
     img {
         width: 10em;
         padding-bottom: 1em;
+    }
+
+    header {
+        top: 50%;
     }
 
     #introduction h1 {
