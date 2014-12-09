@@ -315,6 +315,44 @@ a:hover {
 
 
 
+/* Tumblr */
+
+.metadata, a {
+    text-align: center;
+    padding-bottom: 3em;
+    color: darkgray;
+}
+
+.post-text h1, h1 > a {
+    padding: 0;
+    color: #303030;
+    text-decoration: none;
+}
+
+.post-photo img {
+    width: 70%;
+    text-align: center;
+}
+
+.footer {
+    padding-top: 2em;
+    text-align: center;
+}
+
+.footer p {
+    padding-top: 0; 
+    padding-bottom: 0;
+}
+
+.footer small, small > a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+
+
+
+
 /* Media Query */
 
 @media screen and (min-width: 15em) {
@@ -512,6 +550,11 @@ a:hover {
         border-left: 1px solid darkgray;
         border-top: 1px solid darkgray;
     }
+
+    .main p {
+        padding-left: 20em;
+        padding-right: 20em;
+    }
 }
 
 @media screen and (min-width: 100em) {
@@ -572,6 +615,11 @@ a:hover {
         padding-top: 2em;
         border-left: 1px solid darkgray;
         border-top: 1px solid darkgray;
+    }
+
+    .main p {
+        padding-left: 20em;
+        padding-right: 20em;
     }
 }
 
@@ -634,5 +682,10 @@ a:hover {
         padding-top: 2em;
         border-left: 1px solid darkgray;
         border-top: 1px solid darkgray;
+    }
+
+    .main p {
+        padding-left: 20em;
+        padding-right: 20em;
     }
 }
