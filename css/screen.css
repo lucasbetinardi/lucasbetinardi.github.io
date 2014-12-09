@@ -319,10 +319,13 @@ a:hover {
 
 .metadata, .metadata a {
     text-align: center;
-    padding-bottom: 1em;
     color: darkgray;
     font-weight: 100;
     font-size: .9em;
+}
+
+.metadata ul {
+    padding: 0;
 }
 
 .post-text h1, h1 > a {
@@ -331,8 +334,9 @@ a:hover {
     text-decoration: none;
 }
 
-.post-text p {
+.post-text > p {
     padding-top: 1em;
+    padding-bottom: 0em;
 }
 
 .post-photo {
@@ -344,7 +348,7 @@ a:hover {
 }
 
 .footer {
-    padding-top: 2em;
+    padding-top: 1em;
     text-align: center;
     font-weight: 100;
 }
