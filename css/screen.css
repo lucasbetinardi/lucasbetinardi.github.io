@@ -319,8 +319,11 @@ a:hover {
 
 .metadata, a {
     text-align: center;
-    padding-bottom: 3em;
+    padding-bottom: 1em;
     color: darkgray;
+    font-weight: 100;
+    padding-right: .1em;
+    padding-left: .1em;
 }
 
 .post-text h1, h1 > a {
@@ -329,14 +332,22 @@ a:hover {
     text-decoration: none;
 }
 
+.post-text p {
+    padding-bottom: 1em;
+}
+
+.post-photo {
+    text-align: center;
+}
+
 .post-photo img {
     width: 70%;
-    text-align: center;
 }
 
 .footer {
     padding-top: 2em;
     text-align: center;
+    font-weight: 100;
 }
 
 .footer p {
